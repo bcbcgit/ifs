@@ -1,0 +1,313 @@
+/* ==========================================================================
+  chat
+========================================================================== */
+#chat_base #chat_header {
+  width: 100%;
+  position: relative;
+  background-color: #8C7D73;
+  padding: 15px;
+  line-height: 1; }
+  #chat_base #chat_header a {
+    color: #FAFAFA; }
+#chat_base input[type="text"] {
+  border: solid 1px #333;
+  margin: 0 5px;
+  background-color: #E0D9D3; }
+#chat_base input[type="text"]#name, #chat_base input[type="text"]#name_color, #chat_base input[type="text"]#log_color {
+  width: 100%; }
+#chat_base input[type="text"]#message, #chat_base input[type="text"]#in_com {
+  width: 100%; }
+#chat_base .btns {
+  display: inline-block;
+  border: solid 1px #333;
+  background-color: #453F38;
+  color: #E0D9D3;
+  padding: 3px 10px;
+  cursor: pointer;
+  text-align: center; }
+  #chat_base .btns:hover {
+    background-color: #292521;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+  #chat_base .btns#submit {
+    margin-top: 5px;
+    margin-left: 0px; }
+  #chat_base .btns#modal_close, #chat_base .btns#leave {
+    padding: 3px 10px; }
+#chat_base #form_wrap #chat_title {
+  font-weight: bold;
+  margin-bottom: 3px; }
+#chat_base #form_wrap #enter_form > ul > li > div {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  margin: 0; }
+  #chat_base #form_wrap #enter_form > ul > li > div > span {
+    display: inline-block;
+    line-height: 30px;
+    white-space: nowrap; }
+  #chat_base #form_wrap #enter_form > ul > li > div#message_wrap #message {
+    width: 100%; }
+  #chat_base #form_wrap #enter_form > ul > li > div#chat_enter {
+    margin-left: 5px; }
+#chat_base #form_wrap #send_form {
+  display: none;
+  width: 100%; }
+  #chat_base #form_wrap #send_form > ul > li > div {
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    margin: 0; }
+    #chat_base #form_wrap #send_form > ul > li > div > span {
+      display: inline-block;
+      line-height: 30px;
+      white-space: nowrap; }
+    #chat_base #form_wrap #send_form > ul > li > div#message_wrap #message {
+      width: 100%; }
+    #chat_base #form_wrap #send_form > ul > li > div#chat_enter {
+      margin-left: 5px; }
+#chat_base #name_view {
+  background-color: #E0D9D3;
+  line-height: 1 !important;
+  padding: 2px; }
+#chat_base #chat_out {
+  display: none;
+  width: 100%;
+  text-align: center;
+  line-height: 1.6; }
+#chat_base #log_wrap {
+  line-height: 1.5em;
+  font-size: 108%;
+  padding: 15px;
+  background-color: #b9b1a9; }
+  #chat_base #log_wrap time {
+    font-size: 77%;
+    color: #95897F; }
+  #chat_base #log_wrap i {
+    font-style: normal;
+    margin: 0 10px; }
+  #chat_base #log_wrap .b_name {
+    font-weight: bold; }
+
+#setting > div > span {
+  color: #FAFAFA;
+  cursor: pointer; }
+  #setting > div > span:hover {
+    color: #CCCCCC; }
+
+#color_select_wrap {
+  background-color: #E0D9D3;
+  padding: 3%; }
+  #color_select_wrap div#select_else {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #FFF; }
+  #color_select_wrap div#color_list span {
+    width: 100%;
+    cursor: pointer; }
+
+@media screen and (min-width: 1000px) {
+  #color_select_wrap div#color_list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-align-content: stretch;
+    align-content: stretch;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    #color_select_wrap div#color_list span {
+      width: 20%; } }
+#cboxClose {
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+
+#leave {
+  display: none; }
+
+@media screen and (min-width: 1000px) {
+  #chat_base #chat_header {
+    max-width: 1000px; }
+  #chat_base input[type="text"]#name, #chat_base input[type="text"]#name_color, #chat_base input[type="text"]#log_color {
+    width: 120px; } }
+@media screen and (min-width: 700px) {
+  #chat_base #form_wrap {
+    width: 580px;
+    margin: 0 auto; }
+    #chat_base #form_wrap #enter_form > ul > li > div#message_wrap #message {
+      width: 400px; }
+    #chat_base #form_wrap #enter_form > ul > li > div#chat_enter {
+      margin-left: 0; }
+    #chat_base #form_wrap #send_form {
+      width: 580px;
+      margin: 0 auto; }
+      #chat_base #form_wrap #send_form input[type="text"]#name {
+        width: 120px; }
+      #chat_base #form_wrap #send_form > ul > li > div#message_wrap #in_message {
+        width: 400px; }
+      #chat_base #form_wrap #send_form > ul > li > div#chat_enter {
+        margin-left: 0; } }
+/*
+#chat_base #form_wrap #setting {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  text-align: right; }
+#chat_base #form_wrap #setting > div {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+#chat_base #form_wrap #setting > div > span, #chat_base #form_wrap #setting > div > a {
+  padding: 0 5px;
+  cursor: pointer;
+  color: #E0D9D3;
+  text-decoration: none; }
+#chat_base #form_wrap #setting > div > span:hover, #chat_base #form_wrap #setting > div > a:hover {
+  text-decoration: underline; }
+#chat_base #form_wrap #setting #open_btn {
+  display: none;
+  margin-left: 10px; }
+#chat_base #form_wrap #setting #leave {
+  display: none; }
+#chat_base #form_wrap #in_name_view {
+  background-color: #E0D9D3;
+  padding: 0 3px; }
+#chat_base #change {
+  display: block;
+  margin-top: 5px; }
+@media screen and (min-width: 1000px) {
+  #chat_base #change {
+    display: inline-block;
+    margin-top: 0; } }
+#chat_base #message_wrap {
+  display: block; }
+#chat_base #message_wrap input {
+  margin: 0; }
+@media screen and (min-width: 1000px) {
+  #chat_base #message_wrap {
+    display: inline-block; } }
+#chat_base #log_wrap {
+  line-height: 1.5em;
+  font-size: 108%;
+  padding: 15px;
+  background-color: #b9b1a9; }
+#chat_base #log_wrap time {
+  font-size: 77%;
+  color: #95897F; }
+#chat_base #log_wrap i {
+  font-style: normal;
+  margin: 0 10px; }
+#chat_base #log_wrap .b_name {
+  font-weight: bold; }
+#chat_base .colorbox-cont {
+  position: fixed;
+  width: 96%;
+  height: 65%;
+  overflow: scroll;
+  top: 115px;
+  left: 2%;
+  margin-left: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: solid 1px #FFF; }
+#chat_base .colorbox-cont div:not(.nocls) {
+  color: #FFF;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+  width: 150px; }
+#chat_base .colorbox-cont .box-item {
+  overflow: hidden;
+  margin: 0 0 2px 0;
+  padding: 3px; }
+#chat_base .colorbox-cont .box-item:hover {
+  background-color: #B7AFA8; }
+#chat_base .colorbox-cont .box-item span {
+  float: left;
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px; }
+@media screen and (min-width: 1000px) {
+  #chat_base .colorbox-cont {
+    position: fixed;
+    width: 780px;
+    height: 50%;
+    overflow: scroll;
+    top: 70px;
+    left: 50%;
+    margin-left: -390px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 1px #FFF; } }
+#chat_base .selector_btn {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  cursor: pointer; }
+#chat_base .celector_box_close {
+  clear: both;
+  display: block;
+  text-align: right;
+  margin-bottom: 10px; }
+#chat_base .celector_box_close > div {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  color: #FFF;
+  padding: 5px;
+  border: solid 1px #FFF;
+  cursor: pointer; }
+
+#color_select_wrap {
+  background-color: #E0D9D3;
+  padding: 3%; }
+#color_select_wrap div#select_else {
+  text-align: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #FFF; }
+#color_select_wrap div#color_list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-align-content: stretch;
+  align-content: stretch;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+#color_select_wrap div#color_list span {
+  width: 20%;
+  cursor: pointer; }
+
+#chat_out {
+  display: none;
+  text-align: center;
+  background-color: #8C7D73;
+  padding: 50px 0;
+  line-height: 1.6; }
+#chat_out > a {
+  display: inline-block;
+  padding: 0 5px;
+  cursor: pointer;
+  color: #E0D9D3;
+  text-decoration: none; }
+#chat_out > a:hover {
+  text-decoration: underline; }
+*/
+
+/*# sourceMappingURL=danwa.css.map */

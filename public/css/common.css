@@ -1,0 +1,176 @@
+/* ==========================================================================
+  Common
+========================================================================== */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+html {
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body, button, input, select, textarea {
+  color: #333;
+  font-family: 'Meiryo', 'Hiragino Kaku Gothic Pro', sans-serif;
+  font-size: 14px;
+  line-height: 1.6; }
+
+body {
+  background-color: #FFF; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:active {
+    outline: 0; }
+
+ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0; }
+  ul > li {
+    list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.arrow {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 18px;
+  color: #000;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 16px; }
+  .arrow::before, .arrow::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle; }
+
+body {
+  background-color: #172b34;
+  height: 100%; }
+
+.container {
+  position: relative;
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+  max-width: 920px;
+  aspect-ratio: 920/305;
+  margin: 0 auto;
+  background-color: #a5a29b;
+  border-left: solid 2px #736f67;
+  border-right: solid 2px #736f67;
+  -moz-box-shadow: 0 0 20px #000;
+  -webkit-box-shadow: 0 0 20px #000;
+  box-shadow: 0 0 20px #000; }
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 1000px; } }
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 0; }
+
+/* ==========================================================================
+  header
+========================================================================== */
+#header {
+  background: url(/images/common/header_back.png) top right repeat-x; }
+  #header .wrap {
+    background: none;
+    height: 45px; }
+  #header ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end; }
+    #header ul li a {
+      display: inline-block;
+      padding-right: 15px;
+      color: #FFF; }
+      #header ul li a:hover {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+        opacity: 0.9; }
+      #header ul li a:before {
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: #36657b; }
+      #header ul li a:after {
+        left: 3px;
+        width: 4px;
+        height: 4px;
+        border-top: 1px solid #FFF;
+        border-right: 1px solid #FFF;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg); }
+
+@media screen and (min-width: 700px) {
+  #header .wrap {
+    background: url(/images/common/header_logo.png) 0 0 no-repeat; } }
+/* ==========================================================================
+  contents
+========================================================================== */
+/* ==========================================================================
+  form
+========================================================================== */
+/*
+form {
+  width: 50%;
+  margin: 3% auto;
+  min-width: 9rem;
+}
+input, button, textarea {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background: #e0e0e0;
+  color: #7a7a7a;
+}
+
+input[type=submit], button[type=submit], textarea[type=submit] {
+  background: #84AD47;
+  color: #fff;
+  width: auto;
+  float: right;
+}
+
+input::placeholder, button::placeholder, textarea::placeholder {
+  color: #7a7a7a;
+}
+
+input.error, button.error, textarea.error {
+  background: #AD4747;
+  color: #fff;
+}
+
+input.error::placeholder, button.error::placeholder {
+  color: black;
+}
+
+textarea {
+  &.error::placeholder {
+    color: black;
+  }
+
+  height: 10rem;
+}
+*/
+
+/*# sourceMappingURL=common.css.map */
