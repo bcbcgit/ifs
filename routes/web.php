@@ -40,3 +40,7 @@ Route::middleware(['auth', AdminMiddleware::class . ':user'])
     ->group(function () {
         Route::get('dashboard', fn() => view('users.dashboard'))->name('user.dashboard');
     });
+
+
+
+# ------------------------------------------------------------
